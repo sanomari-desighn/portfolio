@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佐野真理 ポートフォリオ</title>
+    <!-- Tailwind CSSの読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome (アイコン用) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        // Tailwind CSSのカスタム設定
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1a202c',
+                        secondary: '#2d3748',
+                        accent: '#38b2ac',
+                        'accent-light': '#81e6d9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* カスタムスタイル */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+
+    <!-- ヘッダー -->
+    <header id="header" class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm fixed w-full top-0 z-50 transition-all duration-300 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-accent">Mari Sano's Portfolio</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-accent transition-colors duration-300">About</a>
+                <a href="#skills" class="hover:text-accent transition-colors duration-300">Skills</a>
+                <a href="#works" class="hover:text-accent transition-colors duration-300">Works</a>
+                <a href="#contact" class="hover:text-accent transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800">
+            <a href="#about" class="block py-2 px-6 hover:bg-gray-200 dark:hover:bg-gray-700">About</a>
+            <a href="#skills" class="block py-2 px-6 hover:bg-gray-200 dark:hover:bg-gray-700">Skills</a>
+            <a href="#works" class="block py-2 px-6 hover:bg-gray-200 dark:hover:bg-gray-700">Works</a>
+            <a href="#contact" class="block py-2 px-6 hover:bg-gray-200 dark:hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- About (ヒーローセクション) -->
+        <section id="about" class="relative min-h-screen w-full overflow-hidden" style="background: url('images/FV2.jpg') center center / cover no-repeat;">
+  <div class="absolute left-0 top-0 h-full flex items-center justify-center" style="width:45%;">
+  <div class="flex flex-col items-center w-full max-w-[420px] px-6 py-12 mx-auto">
+    <img src="images/profile.jpg.png" alt="佐野真理 プロフィール写真" class="w-32 h-32 rounded-full mb-6 border-4 border-accent shadow-lg">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 text-center">佐野 真理</h1>
+    <p class="text-base md:text-lg text-gray-800 mb-6 text-center break-words">
+      動物園の飼育員からWebデザイナーへ。<br>
+      異色の経歴を活かし、ユーザーの心に響く、<br>
+      美しく機能的なWeb体験をデザインします。<br>
+      現在はサクフリ株式会社にて、Webデザインとキャリア支援に情熱を注いでいます。
+    </p>
+    <a href="#contact" class="bg-accent hover:bg-accent-light text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-105 shadow-lg">
+      お問い合わせ
+    </a>
+  </div>
+</div>
+</section>
+
+        <!-- Skills -->
+        <section id="skills" class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">My Skills</h2>
+                <div class="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-camera text-5xl text-purple-500 mb-4"></i>
+                        <h3 class="font-bold text-lg">Photoshop</h3>
+                    </div>
+                    <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-pen-nib text-5xl text-yellow-600 mb-4"></i>
+                        <h3 class="font-bold text-lg">Illustrator</h3>
+                    </div>
+                    <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fab fa-figma text-5xl text-pink-500 mb-4"></i>
+                        <h3 class="font-bold text-lg">Figma</h3>
+                    </div>
+                    <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+                        <h3 class="font-bold text-lg">HTML5</h3>
+                    </div>
+                    <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4"></i>
+                        <h3 class="font-bold text-lg">CSS3</h3>
+                    </div>
+                    <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <i class="fab fa-js-square text-5xl text-yellow-400 mb-4"></i>
+                        <h3 class="font-bold text-lg">JavaScript</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works -->
+        <section id="works" class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">Works</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    
+                    <!-- 作品 1 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="images/work-kurumiralp.png" alt="クルミラLP画像" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">クルミラ</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">転職支援サービスのランディングページ</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-accent-light text-accent-darker text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">LP Design</span>
+                                <span class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Photoshop</span>
+                                <span class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">UI/UX</span>
+                            </div>
+                            <a href="https://lp.esvlog.com/" target="_blank" class="inline-block text-accent hover:underline">サイトを見る <i class="fas fa-external-link-alt ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- 作品 2 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="images/work-aojiruec.png" alt="わたしの緑黄色画像" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">わたしの緑黄色＋</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">青汁サプリメントのECサイト</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-accent-light text-accent-darker text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">UI/UX Design</span>
+                                <span class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">レスポンシブ</span>
+                                <span class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">EC</span>
+                            </div>
+                            <a href="https://e7hcx.hp.peraichi.com/watashinoryokuousyokuplus" target="_blank" class="inline-block text-accent hover:underline">サイトを見る <i class="fas fa-external-link-alt ml-1"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-4">Contact</h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-12">お仕事のご依頼・ご相談など、お気軽にご連絡ください。</p>
+                
+                <form id="contact-form" class="max-w-2xl mx-auto" novalidate>
+                    <div id="form-result" class="hidden mb-4 p-4 rounded-md"></div>
+                    <div class="mb-6">
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">お名前</label>
+                        <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="山田 太郎" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">メールアドレス</label>
+                        <input type="email" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">お問い合わせ内容</label>
+                        <textarea id="message" name="message" rows="4" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="お問い合わせ内容をご記入ください..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-accent hover:bg-accent-light text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 transform hover:scale-105 shadow-lg">
+                            送信する
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 dark:bg-black text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+                <p>&copy; 2025 佐野真理. All Rights Reserved.</p>
+                <div class="flex mt-4 sm:mt-0 space-x-6">
+                    <!-- ご自身のSNSアカウントのリンクに書き換えてください -->
+                    <a href="#" class="hover:text-accent transition-colors duration-300"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="hover:text-accent transition-colors duration-300"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="#" class="hover:text-accent transition-colors duration-300"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // モバイルメニューのトグル
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // メニュー項目クリックでメニューを閉じる
+        const navLinks = document.querySelectorAll('#mobile-menu a, nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href').startsWith('#')) {
+                    if(!mobileMenu.classList.contains('hidden')){
+                         mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // ヘッダーのスクロールエフェクト
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-xl');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2', 'shadow-xl');
+                header.classList.add('py-4');
+            }
+        });
+
+        // お問い合わせフォームの処理
+        const contactForm = document.getElementById('contact-form');
+        const formResult = document.getElementById('form-result');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // バリデーション
+            const name = contactForm.name.value;
+            const email = contactForm.email.value;
+            const message = contactForm.message.value;
+
+            if (name && email && message) {
+                // mailtoリンク生成
+                const subject = encodeURIComponent('ポートフォリオからのお問い合わせ');
+                const body = encodeURIComponent(`【お名前】${name}\n【メールアドレス】${email}\n【お問い合わせ内容】\n${message}`);
+                window.location.href = `mailto:sanomari.design@gmail.com?subject=${subject}&body=${body}`;
+            } else {
+                formResult.textContent = 'すべての項目を入力してください。';
+                formResult.className = 'p-4 rounded-md bg-red-200 text-red-800';
+                setTimeout(() => {
+                    formResult.className = 'hidden mb-4 p-4 rounded-md';
+                }, 5000);
+            }
+        });
+    });
+    </script>
+</body>
+</html>
